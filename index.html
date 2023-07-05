@@ -7,7 +7,11 @@
 <p id="money_value">P</p>
 <script>
 if(document.cookie == "authed = false") {
-  window.location.href = "./singin"
+  window.location.href = "./singin";
+} else if(document.cookie == "authed = true") {
+  window.location.href = ".";
+}  else {
+  document.cookie = "authed = false";
 }
 </script>
 </body>
