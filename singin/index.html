@@ -39,10 +39,10 @@ body {
 <body>
 <p id="signin_text">Пожалуйста,<br> войдите в аккаунт PuzPay</p>
 <div id="code">
-<div id="code1"></div>
-<div id="code2"></div>
-<div id="code3"></div>
-<div id="code4"></div>
+<div id="code1"><p id="code_t1"></p></div>
+<div id="code2"><p id="code_t2"></p></div>
+<div id="code3"><p id="code_t3"></p></div>
+<div id="code4"><p id="code_t4"></p></div>
 </div>
 <div id="keyboard">
 <div id="keyboard_0">0</div>
@@ -65,6 +65,10 @@ var code1 = document.getElementById('code1');
 var code2 = document.getElementById('code2');
 var code3 = document.getElementById('code3');
 var code4 = document.getElementById('code4');
+var code_t1 = document.getElementById('code_t1');
+var code_t2 = document.getElementById('code_t2');
+var code_t3 = document.getElementById('code_t3');
+var code_t4 = document.getElementById('code_t4');
 var keyboard_0 = document.getElementById('keyboard_0');
 var keyboard_1 = document.getElementById('keyboard_1');
 var keyboard_2 = document.getElementById('keyboard_2');
@@ -81,7 +85,7 @@ code.onclick = function () {
   keyboard.style.display = "block";
 };
 keyboard_0.onclick = function () {
-  alert(")");
+  code_t1.innerHtml = "0";
 };
 keyboard_1.onclick = function () {
   keyboard.style.display = "block";
