@@ -18,7 +18,7 @@ body {
 #code1, #code2, #code3, #code4 {
   width: 100px;
   height: 100px;
-  background-color: #0F0;
+  background-color: #F00;
   display: inline-block;
 }
 #keyboard {
@@ -59,7 +59,7 @@ body {
 <div id="keyboard_9">9</div>
 </div>
 <script>
-var code_num = 1
+var code_num = code1
 var code = document.getElementById('code');
 var code1 = document.getElementById('code1');
 var code2 = document.getElementById('code2');
@@ -81,7 +81,7 @@ code.onclick = function () {
   keyboard.style.display = "block";
 };
 keyboard_0.onclick = function () {
-  code + code_num.innerText = 0;
+  code_num.innerText = 0;
 };
 keyboard_1.onclick = function () {
   keyboard.style.display = "block";
