@@ -34,6 +34,9 @@ body {
   font-size: 115px;
   letter-spacing: 75px;
 }
+#code_t1, #code_t2, #code_t3, #code_t4 {
+  font-size: 115px;
+}
 </style>
 </head>
 <body>
@@ -86,6 +89,9 @@ code.onclick = function () {
 };
 keyboard_0.onclick = function () {
   code_t1.innerText = "0";
+  if (code_num == 1) {
+    code_t1.innerText =
+  }
   code_num = code_num + 1;
 };
 keyboard_1.onclick = function () {
